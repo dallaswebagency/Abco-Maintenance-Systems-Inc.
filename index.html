@@ -62,8 +62,9 @@ nav.main>a:hover::after,.has-sub:hover>a::after{width:100%}
 .hero .where{margin:22px 0 34px;font:700 13px var(--f-b);letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}
 .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
 .collage{position:relative;height:600px}
-.collage .main{position:absolute;right:0;top:0;width:86%;height:500px;object-fit:cover;clip-path:polygon(0 0,calc(100% - 70px) 0,100% 70px,100% 100%,0 100%);box-shadow:0 0 0 0 transparent}
-.collage .small{position:absolute;left:0;bottom:0;width:46%;height:230px;object-fit:cover;border:8px solid var(--paper);clip-path:polygon(0 0,100% 0,100% 100%,40px 100%,0 calc(100% - 40px))}
+.collage::before{content:"";position:absolute;right:-18px;top:-18px;width:86%;height:500px;background:var(--green)}
+.collage .main{position:absolute;right:0;top:0;width:86%;height:500px;object-fit:cover}
+.collage .small{position:absolute;left:0;bottom:0;width:46%;height:230px;object-fit:cover;border:8px solid var(--paper);outline:2px solid var(--navy)}
 .stamp{position:absolute;right:-6px;bottom:20px;background:var(--navy);color:#fff;padding:22px 26px;width:210px}
 .stamp b{display:block;font:800 54px/1 var(--f-d);color:#fff}.stamp span{font-size:13px;letter-spacing:.06em;color:#bfc0ec}
 .stamp::before{content:"";position:absolute;left:0;top:0;width:8px;height:100%;background:var(--green)}
