@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abco Maintenance | Commercial Janitorial Cleaning in Calgary &amp; Edmonton Since 1988</title>
+<meta name="description" content="A business built on decades of trust. Commercial and institutional cleaning in Calgary, Edmonton and surrounding areas since 1988. Bonded, insured, WCB covered. Free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#202060; --navy-d:#141443; --green:#007858; --green-d:#005c44; --mint:#d8efe6;
+  --paper:#f5f2ea; --paper-2:#ebe6d9; --ink:#17173d; --mute:#5b5b7a; --line:rgba(32,32,96,.14);
+  --f-d:'Bricolage Grotesque',system-ui,sans-serif; --f-b:'Hanken Grotesk',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-b);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--f-d);line-height:1.04;letter-spacing:-.02em}
+.eyebrow{font:700 12px/1 var(--f-b);letter-spacing:.18em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font:700 15px var(--f-b);border:2px solid var(--navy);transition:.25s;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))}
+.btn.fill{background:var(--navy);color:#fff}.btn.fill:hover{background:var(--green);border-color:var(--green)}
+.btn.line{background:transparent;color:var(--navy)}.btn.line:hover{background:var(--navy);color:#fff}
+.btn.g{background:var(--green);border-color:var(--green);color:#fff}.btn.g:hover{background:#fff;color:var(--green)}
+
+/* top strip */
+.strip{background:var(--navy-d);color:#cfd0ee;font-size:13px}
+.strip .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+.strip b{color:#fff}.strip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ddc97;margin-right:8px;box-shadow:0 0 0 4px rgba(61,220,151,.2)}
+
+/* header */
+header.top{background:var(--paper);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo img{height:58px;width:auto}
+nav.main{display:flex;gap:30px;align-items:center;font-weight:600;font-size:15px}
+nav.main>a,.has-sub>a{position:relative;padding:6px 0}
+nav.main>a::after,.has-sub>a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--green);transition:.25s}
+nav.main>a:hover::after,.has-sub:hover>a::after{width:100%}
+.has-sub{position:relative}
+.sub{position:absolute;top:100%;left:-16px;background:#fff;border:1px solid var(--line);padding:10px;min-width:220px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;box-shadow:0 20px 40px rgba(20,20,67,.14)}
+.has-sub:hover .sub{opacity:1;visibility:visible;transform:none}
+.sub a{display:block;padding:9px 12px;font-size:14px;font-weight:500}.sub a:hover{background:var(--mint);color:var(--green-d)}
+.call-pill{background:var(--green);color:#fff;padding:12px 20px;font-weight:700;font-size:15px;display:flex;gap:8px;align-items:center}
+.call-pill:hover{background:var(--navy)}
+.burger{display:none;background:none;border:2px solid var(--navy);width:46px;height:46px;font-size:20px;color:var(--navy)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:64px 0 90px;background:
+  linear-gradient(var(--line) 1px,transparent 1px) 0 0/100% 56px,
+  linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/56px 100%,var(--paper)}
+.hero::before{content:"1988";position:absolute;right:-30px;top:30px;font:800 clamp(180px,26vw,380px)/1 var(--f-d);color:transparent;-webkit-text-stroke:2px rgba(32,32,96,.12);letter-spacing:-.05em;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(40px,5.2vw,76px);font-weight:800;color:var(--navy);margin:22px 0 22px}
+.hero h1 em{font-style:normal;color:var(--green);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:10px;background:var(--mint);z-index:-1}
+.hero p.lead{font-size:19px;color:var(--mute);max-width:520px}
+.hero .where{margin:22px 0 34px;font:700 13px var(--f-b);letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.collage{position:relative;height:600px}
+.collage .main{position:absolute;right:0;top:0;width:86%;height:500px;object-fit:cover;clip-path:polygon(0 0,calc(100% - 70px) 0,100% 70px,100% 100%,0 100%);box-shadow:0 0 0 0 transparent}
+.collage .small{position:absolute;left:0;bottom:0;width:46%;height:230px;object-fit:cover;border:8px solid var(--paper);clip-path:polygon(0 0,100% 0,100% 100%,40px 100%,0 calc(100% - 40px))}
+.stamp{position:absolute;right:-6px;bottom:20px;background:var(--navy);color:#fff;padding:22px 26px;width:210px}
+.stamp b{display:block;font:800 54px/1 var(--f-d);color:#fff}.stamp span{font-size:13px;letter-spacing:.06em;color:#bfc0ec}
+.stamp::before{content:"";position:absolute;left:0;top:0;width:8px;height:100%;background:var(--green)}
+.cert{position:absolute;left:30px;top:30px;width:92px;box-shadow:0 12px 30px rgba(20,20,67,.25);background:#fff;padding:4px}
+
+/* trust */
+.trust{background:#fff;border-block:1px solid var(--line)}
+.trust .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:26px;padding-bottom:26px;flex-wrap:wrap}
+.trust .badges{display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+.trust .badges img{height:46px;width:auto;object-fit:contain}
+.trust .badges img.tall{height:62px}
+.trust ul{list-style:none;display:flex;gap:10px 22px;flex-wrap:wrap;font-weight:600;font-size:14px;color:var(--navy)}
+.trust li::before{content:"✓";color:var(--green);margin-right:8px;font-weight:800}
+
+/* services ledger */
+.services{background:var(--navy);color:#fff;padding:110px 0}
+.services .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:60px;flex-wrap:wrap}
+.services h2{font-size:clamp(36px,4.6vw,64px);max-width:640px}
+.services .eyebrow{color:#5fe0ae;margin-bottom:18px}
+.services .head p{max-width:380px;color:#c4c5ea}
+.ledger{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
+.rows{border-top:1px solid rgba(255,255,255,.2)}
+.row{display:grid;grid-template-columns:70px 1fr 40px;gap:10px;align-items:start;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.2);cursor:pointer;transition:.25s}
+.row .n{font:700 15px var(--f-d);color:#5fe0ae;padding-top:10px}
+.row h3{font-size:clamp(26px,3vw,40px);font-weight:700;transition:.25s}
+.row p{max-height:0;overflow:hidden;opacity:0;color:#c4c5ea;transition:.35s;max-width:480px}
+.row .ar{font-size:26px;color:#5fe0ae;transition:.3s;padding-top:4px}
+.row.on{padding-left:16px;background:linear-gradient(90deg,rgba(0,120,88,.35),transparent)}
+.row.on p{max-height:120px;opacity:1;margin-top:10px}
+.row.on .ar{transform:rotate(-45deg)}
+.row:hover h3{color:#5fe0ae}
+.pic{position:sticky;top:110px;height:540px;overflow:hidden;clip-path:polygon(60px 0,100% 0,100% 100%,0 100%,0 60px)}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
+.pic img.on{opacity:1}
+.pic .tag{position:absolute;left:0;bottom:0;background:var(--green);color:#fff;font:700 13px var(--f-b);letter-spacing:.12em;text-transform:uppercase;padding:12px 20px;z-index:2}
+.services .more{margin-top:34px}
+
+/* about */
+.about{padding:120px 0;position:relative}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.about .ph{position:relative}
+.about .ph img.a{width:100%;height:560px;object-fit:cover;clip-path:polygon(0 0,100% 0,100% calc(100% - 70px),calc(100% - 70px) 100%,0 100%)}
+.about .ph .num{position:absolute;left:-26px;bottom:-34px;background:var(--green);color:#fff;padding:20px 28px;font:800 64px/1 var(--f-d)}
+.about .ph .num small{display:block;font:600 13px var(--f-b);letter-spacing:.1em;text-transform:uppercase}
+.about h2{font-size:clamp(34px,4vw,56px);color:var(--navy);margin:18px 0 22px}
+.about>.wrap>div>p{color:var(--mute);font-size:18px;margin-bottom:34px}
+.run{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:2px solid var(--navy)}
+.run div{padding:22px 22px 22px 0;border-bottom:1px solid var(--line)}
+.run div:nth-child(odd){border-right:1px solid var(--line)}
+.run div:nth-child(even){padding-left:24px}
+.run h4{font:700 18px var(--f-d);color:var(--navy);margin-bottom:6px}
+.run h4 span{color:var(--green);margin-right:8px}
+.run p{font-size:15px;color:var(--mute)}
+
+/* industries */
+.ind{background:var(--green);color:#fff;padding:90px 0;overflow:hidden}
+.ind .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:center}
+.ind h2{font-size:clamp(32px,3.6vw,50px)}
+.ind .eyebrow{color:#bff3dd;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chips span{padding:13px 22px;border:2px solid rgba(255,255,255,.55);font:600 16px var(--f-b);transition:.25s}
+.chips span:nth-child(3n){background:#fff;color:var(--green-d);border-color:#fff}
+.chips span:nth-child(5n){background:var(--navy);border-color:var(--navy)}
+.chips span:hover{transform:translateY(-4px) rotate(-1deg)}
+
+/* testimonials */
+.voices{padding:120px 0 100px}
+.voices .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px;flex-wrap:wrap}
+.voices h2{font-size:clamp(34px,4vw,56px);color:var(--navy);max-width:600px}
+.voices .gr{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--navy);border-bottom:2px solid var(--green);padding-bottom:4px}
+.voices .gr img{width:28px}
+.q{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:26px;align-items:start}
+.card{background:#fff;padding:36px 32px;position:relative;border-top:6px solid var(--navy)}
+.card:nth-child(2){margin-top:46px;border-color:var(--green)}
+.card:nth-child(3){margin-top:16px}
+.card::before{content:"“";position:absolute;right:22px;top:-6px;font:800 110px/1 var(--f-d);color:var(--mint)}
+.card.big p{font:600 clamp(21px,2vw,27px)/1.35 var(--f-d);color:var(--navy)}
+.card p{color:var(--ink);position:relative;margin-bottom:26px}
+.who{font-size:14px;color:var(--mute);border-top:1px solid var(--line);padding-top:16px;display:flex;align-items:center;gap:10px}
+.who b{display:block;color:var(--navy);font-size:15px}
+.who img{width:26px}
+
+/* plan + faq */
+.plan{background:var(--paper-2);padding:110px 0}
+.plan .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.plan h2{font-size:clamp(32px,3.6vw,50px);color:var(--navy);margin:16px 0 18px}
+.plan .intro p{color:var(--mute);margin-bottom:22px;font-size:17px}
+.plan ul{list-style:none;margin-bottom:30px}
+.plan li{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-weight:600;color:var(--navy)}
+.plan li::before{content:"";flex:none;width:12px;height:12px;margin-top:7px;background:var(--green);transform:rotate(45deg)}
+.plan .bar{display:flex;gap:18px;align-items:center;margin-bottom:34px}
+.plan .bar img.est{width:58%;height:170px;object-fit:cover}
+.plan .bar img.cert2{width:80px;background:#fff;padding:4px}
+.faq details{background:#fff;margin-bottom:12px;border-left:5px solid var(--navy);transition:.2s}
+.faq details[open]{border-color:var(--green)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 24px;font:700 18px var(--f-d);color:var(--navy);display:flex;justify-content:space-between;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:28px;line-height:1;color:var(--green);transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 24px 22px;color:var(--mute)}
+.faq h3{font-size:22px;margin-bottom:18px;color:var(--navy)}
+
+/* emergency */
+.emerg{background:var(--navy-d);color:#fff;padding:70px 0;position:relative;overflow:hidden}
+.emerg::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:60px solid rgba(0,120,88,.35);border-radius:50%}
+.emerg .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;position:relative;z-index:1}
+.emerg h2{font-size:clamp(30px,3.6vw,50px);max-width:640px}
+.emerg p{color:#c4c5ea;margin-top:12px;max-width:560px}
+.emerg .ph-big{font:800 clamp(36px,5vw,64px)/1 var(--f-d);color:#5fe0ae;display:block;margin-bottom:14px}
+
+/* contact */
+.contact{padding:110px 0 90px}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:70px}
+.contact h2{font-size:clamp(34px,4vw,56px);color:var(--navy);margin:16px 0 20px}
+.contact .lead{color:var(--mute);font-size:18px;margin-bottom:30px}
+.contact .acts{display:flex;gap:14px;flex-wrap:wrap}
+.offices{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.office{background:#fff;padding:30px 28px;border-top:6px solid var(--green)}
+.office:nth-child(2){border-color:var(--navy)}
+.office h3{font-size:24px;color:var(--navy);margin-bottom:10px}
+.office p{color:var(--mute);font-size:15px}
+.hours{grid-column:1/-1;background:var(--navy);color:#fff;padding:26px 28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.hours b{font-family:var(--f-d);font-size:20px}
+.hours span{color:#c4c5ea;font-size:15px}
+
+/* footer */
+footer{background:var(--navy-d);color:#c4c5ea;padding:60px 0 28px}
+footer .top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:50px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.14)}
+footer .lg{background:#fff;display:inline-block;padding:10px 16px}
+footer .lg img{height:54px}
+footer p{margin-top:16px;max-width:330px;font-size:15px}
+footer h5{font:700 13px var(--f-b);letter-spacing:.16em;text-transform:uppercase;color:#5fe0ae;margin-bottom:16px}
+footer ul{list-style:none}footer li{margin-bottom:9px;font-size:15px}footer li a:hover{color:#fff}
+footer .bd{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:22px}
+footer .bd img{height:38px;background:#fff;padding:4px;width:auto}
+footer .bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;font-size:14px}
+footer .bot a{color:#fff;font-weight:700;border-bottom:2px solid var(--green)}
+
+@media(max-width:1020px){
+  nav.main{display:none;position:absolute;top:84px;left:0;right:0;background:var(--paper);flex-direction:column;align-items:flex-start;padding:20px 28px;gap:16px;border-bottom:1px solid var(--line)}
+  nav.main.open{display:flex}.burger{display:block}.call-pill{display:none}
+  .has-sub .sub{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:6px 0 0 12px}
+  .hero .wrap,.ledger,.about .wrap,.ind .wrap,.plan .wrap,.contact .wrap{grid-template-columns:1fr;gap:50px}
+  .collage{height:520px}.pic{position:relative;top:0;height:380px}
+  .q{grid-template-columns:1fr}.card:nth-child(n){margin-top:0}
+  footer .top{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .wrap{padding:0 20px}.logo img{height:48px}.hero{padding:44px 0 80px}
+  .collage{height:420px}.collage .main{height:340px;width:90%}.collage .small{height:160px}.stamp{width:160px;padding:16px 18px}.stamp b{font-size:40px}.cert{width:70px}
+  .row{grid-template-columns:44px 1fr 30px}.offices,.run{grid-template-columns:1fr}.run div:nth-child(odd){border-right:0}.run div:nth-child(even){padding-left:0}
+  .plan .bar{flex-direction:column;align-items:flex-start}.plan .bar img.est{width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="strip"><div class="wrap">
+  <span><i class="dot"></i><b>24-hour emergency hotline</b> &nbsp;403-293-5752</span>
+  <span>Mon to Fri 8:00 am to 5:00 pm &middot; Sat and Sun by appointment</span>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="https://www.abcomaintenance.ca"><img src="img/logo.png" alt="Abco Maintenance"></a>
+  <button class="burger" aria-label="Menu" onclick="document.querySelector('nav.main').classList.toggle('open')">&#9776;</button>
+  <nav class="main">
+    <a href="https://www.abcomaintenance.ca">Home</a>
+    <a href="https://www.abcomaintenance.ca/about-us">About Us</a>
+    <a href="https://www.abcomaintenance.ca/disinfecting-sanitizing">Disinfecting &amp; Sanitizing</a>
+    <div class="has-sub"><a href="https://www.abcomaintenance.ca/our-services">Our Services</a>
+      <div class="sub">
+        <a href="https://www.abcomaintenance.ca/janitorial-services">Janitorial Services</a>
+        <a href="https://www.abcomaintenance.ca/office-cleaning">Office Cleaning</a>
+        <a href="https://www.abcomaintenance.ca/commercial-cleaning">Commercial Cleaning</a>
+        <a href="https://www.abcomaintenance.ca/industrial-cleaning">Industrial Cleaning</a>
+        <a href="https://www.abcomaintenance.ca/floor-cleaning">Floor Cleaning</a>
+        <a href="https://www.abcomaintenance.ca/bio-hazard-cleanup">Bio-Hazard Cleanup</a>
+      </div></div>
+    <a href="https://www.abcomaintenance.ca/blog">Blog</a>
+    <a href="https://www.abcomaintenance.ca/contact-us">Contact Us</a>
+  </nav>
+  <a class="call-pill" href="tel:4032935752">&#9742; 403-293-5752</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">Commercial &amp; institutional cleaning</div>
+    <h1>A business built on <em>decades of trust</em></h1>
+    <p class="lead">Abco has provided commercial and institutional cleaning since 1988. Trained staff, on-site managers, and crews that are bonded and insured.</p>
+    <div class="where">Serving Calgary, Edmonton and surrounding areas</div>
+    <div class="ctas">
+      <a class="btn fill" href="https://www.abcomaintenance.ca/about-us">Hire a Trusted Business &rarr;</a>
+      <a class="btn line" href="tel:4032935752">Call 403-293-5752</a>
+    </div>
+  </div>
+  <div class="collage">
+    <img class="main" src="img/community-centre.jpg" alt="Polished floors in a community centre lobby cleaned by Abco">
+    <img class="small" src="img/windows.jpg" alt="Abco team member cleaning office windows">
+    <img class="cert" src="img/green-certified.png" alt="Abco Maintenance Green Cleaning Certified">
+    <div class="stamp"><b>38</b><span>YEARS OF EXPERIENCE<br>SINCE 1988</span></div>
+  </div>
+</div></section>
+
+<section class="trust"><div class="wrap">
+  <div class="badges">
+    <img src="img/badge-wcb.jpg" alt="WCB Alberta">
+    <img src="img/badge-dnb.png" alt="Dun &amp; Bradstreet">
+    <img src="img/badge-cor.jpg" alt="COR certified">
+    <img class="tall" src="img/badge-bbb.png" alt="Better Business Bureau">
+  </div>
+  <ul>
+    <li>Bonded &amp; WCB covered</li>
+    <li>WHMIS trained</li>
+    <li>Police security checks</li>
+    <li>$5M+ liability insurance</li>
+  </ul>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+  <div class="head">
+    <div><div class="eyebrow">Our services</div><h2>Six ways we keep high-traffic buildings in shape</h2></div>
+    <p>Abco is a commercial janitorial contractor for high-traffic buildings. Pick a line to see what each service covers.</p>
+  </div>
+  <div class="ledger">
+    <div>
+      <div class="rows" id="rows">
+        <div class="row on" data-img="0"><span class="n">01</span><div><h3>Janitorial</h3><p>Scheduled ongoing programs cover dusting, vacuuming, waste removal, and restroom sanitation.</p></div><span class="ar">&rarr;</span></div>
+        <div class="row" data-img="1"><span class="n">02</span><div><h3>Office</h3><p>Workstations, meeting rooms, reception areas, and shared spaces kept professional and hygienic.</p></div><span class="ar">&rarr;</span></div>
+        <div class="row" data-img="2"><span class="n">03</span><div><h3>Commercial</h3><p>Plans for retail, institutional, and multi-use buildings, adjusted to foot traffic, layout, and operating hours.</p></div><span class="ar">&rarr;</span></div>
+        <div class="row" data-img="3"><span class="n">04</span><div><h3>Industrial</h3><p>Warehouses, production areas, and surrounding equipment, using methods that meet safety and operational needs.</p></div><span class="ar">&rarr;</span></div>
+        <div class="row" data-img="4"><span class="n">05</span><div><h3>Floor</h3><p>Sweeping, scrubbing, polishing, and carpet care to preserve floor condition and durability.</p></div><span class="ar">&rarr;</span></div>
+        <div class="row" data-img="5"><span class="n">06</span><div><h3>Bio-hazard cleanup</h3><p>Controlled sanitation following defined protocols for handling and disposing of hazardous materials.</p></div><span class="ar">&rarr;</span></div>
+      </div>
+      <div class="more"><a class="btn g" href="https://www.abcomaintenance.ca/our-services">See all services</a></div>
+    </div>
+    <div class="pic" id="pic">
+      <img class="on" src="img/janitorial.jpg" alt="Janitorial cleaning">
+      <img src="img/windows.jpg" alt="Office cleaning">
+      <img src="img/commercial.jpg" alt="Commercial cleaning">
+      <img src="img/hero-floor.jpg" alt="Industrial cleaning">
+      <img src="img/community-centre.jpg" alt="Floor cleaning">
+      <img src="img/janitorial.jpg" alt="Bio-hazard cleanup">
+      <div class="tag" id="tag">Janitorial</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+  <div class="ph">
+    <img class="a" src="img/commercial.jpg" alt="Clean commercial hallway">
+    <div class="num">1988<small>Where it started</small></div>
+  </div>
+  <div>
+    <div class="eyebrow">About Abco</div>
+    <h2>End-to-end cleaning service management</h2>
+    <p>From small offices to large facilities, Abco looks after the whole job: who comes, when they come, what they use, and how it stays safe.</p>
+    <div class="run">
+      <div><h4><span>01</span>Industry-specific scheduling</h4><p>Programs adapted to offices, industrial sites, retail, and healthcare, with daily, periodic, after-hours, or custom schedules.</p></div>
+      <div><h4><span>02</span>Equipment &amp; techniques</h4><p>Commercial-grade equipment and surface-specific methods, including low-moisture systems.</p></div>
+      <div><h4><span>03</span>Staffing &amp; reliability</h4><p>Trained staff under supervision, with coordinated scheduling and consistent assignments.</p></div>
+      <div><h4><span>04</span>Compliance</h4><p>Work follows workplace safety regulations and applicable industry standards.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="ind"><div class="wrap">
+  <div><div class="eyebrow">Industries served</div><h2>If people walk through it every day, we clean it</h2></div>
+  <div class="chips">
+    <span>Airports</span><span>Car dealerships</span><span>Commercial &amp; residential condominiums</span><span>Community centres</span><span>Educational institutions</span><span>Financial institutions</span><span>Healthcare facilities</span><span>Office buildings</span><span>Religious organizations</span><span>Retail &amp; commercial centres</span><span>Schools &amp; daycares</span>
+  </div>
+</div></section>
+
+<section class="voices"><div class="wrap">
+  <div class="head">
+    <div><div class="eyebrow">Testimonials</div><h2>What property and facility managers say</h2></div>
+    <a class="gr" href="https://www.google.com/search?q=Abco%20Maintenance%20Systems%20Inc%20260%2020%20Ave%20NE%2C%20Calgary%2C%20AB%20T2E%201P9#lrd=0x5371656888bc710f:0x39dc0ece4c775f7b,1,,,," target="_blank" rel="noopener"><img src="img/google-icon.png" alt="">Read our Google reviews</a>
+  </div>
+  <div class="q">
+    <div class="card big"><p>Abco worked to cut our building costs without lowering service quality. I would recommend them to any portfolio.</p><div class="who"><div><b>Patricia Saks</b>Property Manager, Dundee Realty Management Corp</div></div></div>
+    <div class="card"><p>The lobby and washrooms, especially the floors, drew many compliments. We plan to hire them again.</p><div class="who"><div><b>Dean K. Thomson</b>Treasurer / Facility Manager, Okotoks Agricultural Society</div></div></div>
+    <div class="card"><p>Two years with Abco. They respond quickly, take on short-notice and emergency work, and their rates are competitive.</p><div class="who"><img src="img/google-icon.png" alt=""><div><b>Winston J.</b>Facility Manager, Google review</div></div></div>
+  </div>
+</div></section>
+
+<section class="plan"><div class="wrap">
+  <div class="intro">
+    <div class="eyebrow">New clients</div>
+    <h2>A cleaning plan built around your building</h2>
+    <p>Tailored cleaning for small offices and large facilities, with a free consultation and a free, no-obligation quote.</p>
+    <div class="bar"><img class="est" src="img/estimate.jpg" alt="Hardwood floor care"><img class="cert2" src="img/green-certified.png" alt="Green Cleaning Certified"></div>
+    <ul><li>Green cleaning, eco-friendly products</li><li>Hypoallergenic products</li><li>Hardwood floor care</li></ul>
+    <a class="btn fill" href="https://www.abcomaintenance.ca/contact-us">Get a free quote &rarr;</a>
+  </div>
+  <div class="faq">
+    <h3>Questions we hear often</h3>
+    <details open><summary>What types of businesses do you clean?</summary><p>Offices, retail stores, warehouses, medical facilities, and industrial spaces, with plans tailored to each business.</p></details>
+    <details><summary>Do you offer one-time cleaning?</summary><p>Yes, including deep cleaning and post-renovation cleanups, as well as ongoing janitorial service.</p></details>
+    <details><summary>Can you clean after business hours?</summary><p>Yes, including evenings and weekends, so your operations are not disrupted.</p></details>
+    <details><summary>Do you clean high-touch areas?</summary><p>Yes, including door handles, light switches, desks, and restrooms.</p></details>
+    <details><summary>What sets Abco apart?</summary><p>Trained staff, eco-friendly products, flexible services, and a focus on quality and customer satisfaction.</p></details>
+  </div>
+</div></section>
+
+<section class="emerg"><div class="wrap">
+  <div><h2>Emergency? Our hotline is open 24 hours.</h2><p>Bonded and WCB-covered staff with WHMIS training and police security checks, backed by at least $5 million in liability insurance.</p></div>
+  <div><a class="ph-big" href="tel:4032935752">403-293-5752</a><a class="btn g" href="mailto:sales@abcomaintenance.ca">Email sales@abcomaintenance.ca</a></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div>
+    <div class="eyebrow">Contact us</div>
+    <h2>Professional cleaning, eco-friendly and on your schedule</h2>
+    <p class="lead">Serving Calgary, Edmonton and surrounding areas.</p>
+    <div class="acts"><a class="btn fill" href="https://www.abcomaintenance.ca/contact-us">Free quote</a><a class="btn line" href="tel:4032935752">403-293-5752</a></div>
+  </div>
+  <div class="offices">
+    <div class="office"><h3>Calgary</h3><p>260 20 Ave NE<br>Calgary, AB T2E 1P9</p></div>
+    <div class="office"><h3>Edmonton</h3><p>299 Falaise Ave, Unit 9<br>Building 299, Lancaster Park</p></div>
+    <div class="hours"><div><b>Office hours</b><br><span>Mon to Fri 8:00 am to 5:00 pm</span></div><div><b>Weekends</b><br><span>Sat and Sun by appointment</span></div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="top">
+    <div><span class="lg"><img src="img/logo.png" alt="Abco Maintenance"></span><p>Commercial and institutional cleaning in Calgary, Edmonton and surrounding areas since 1988.</p>
+      <div class="bd"><img src="img/badge-wcb.jpg" alt="WCB Alberta"><img src="img/badge-dnb.png" alt="Dun &amp; Bradstreet"><img src="img/badge-cor.jpg" alt="COR"><img src="img/badge-bbb.png" alt="BBB"></div></div>
+    <div><h5>Explore</h5><ul>
+      <li><a href="https://www.abcomaintenance.ca/about-us">About Us</a></li>
+      <li><a href="https://www.abcomaintenance.ca/disinfecting-sanitizing">Disinfecting &amp; Sanitizing</a></li>
+      <li><a href="https://www.abcomaintenance.ca/our-services">Our Services</a></li>
+      <li><a href="https://www.abcomaintenance.ca/blog">Blog</a></li>
+      <li><a href="https://www.abcomaintenance.ca/contact-us">Contact Us</a></li></ul></div>
+    <div><h5>Get in touch</h5><ul>
+      <li><a href="tel:4032935752">403-293-5752</a></li>
+      <li><a href="mailto:sales@abcomaintenance.ca">sales@abcomaintenance.ca</a></li>
+      <li>260 20 Ave NE, Calgary, AB T2E 1P9</li>
+      <li><a href="https://www.facebook.com/Abco-Maintenance-Systems-237770936962837/" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+  </div>
+  <div class="bot"><span>&copy; Abco Maintenance Systems Inc. All rights reserved.</span><span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</span></div>
+</div></footer>
+
+<script>
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('.row')),imgs=[].slice.call(document.querySelectorAll('#pic img')),tag=document.getElementById('tag');
+  function on(i){rows.forEach(function(r,k){r.classList.toggle('on',k===i)});imgs.forEach(function(m,k){m.classList.toggle('on',k===i)});tag.textContent=rows[i].querySelector('h3').textContent}
+  rows.forEach(function(r,i){r.addEventListener('mouseenter',function(){on(i)});r.addEventListener('click',function(){on(i)})});
+})();
+</script>
+</body>
+</html>
